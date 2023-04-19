@@ -16,6 +16,33 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
+	<repositories>
+	<repository>
+		<id>manoharkonde</id>
+		<url>https://pkgs.dev.azure.com/manoharkonde/_packaging/manoharkonde/maven/v1</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>manoharkonde</id>
+			<url>https://pkgs.dev.azure.com/manoharkonde/_packaging/manoharkonde/maven/v1</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
